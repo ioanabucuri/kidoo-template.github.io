@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ecommerce Store</title>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+                
+    </head>
+
+    <body>
+        <div id="top"><!--top starts-->
+            
+            <div class="container"><!--Container Starts-->
+                
+                <div class="col-md-6 offer"><!--col-md-6 offer Starts-->
+                    
+                    <a href="#" class="btn btn-success btn-sm">
+                        Welcome :Guest
+                    </a>
+                    
+                    <a href="cart.html">
+                        Shopping Cart Total Price: $100, Total Items 2
+                    </a>
+                    
+                </div><!--col-md-6 offer Ends-->  
+                
+                <div class="col-md-6"> <!--col-md-6 Starts-->
+                    <ul class="menu"><!--Menu Starts-->
+                        <li>
+                            <a href="customer_register.html" >
+                                Register
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="customer/my_account.html">
+                                My Account
+                            </a>
+                        </li> 
+                                             
+                        <li>
+                            <a href="cart.html">
+                                Go to Cart
+                            </a>
+                        </li>
+                                             
+                        <li>
+                            <a href="checkout.html">
+                               Login 
+                            </a>
+                        </li> 
+                                              
+                    </ul><!--Menu Ends-->
+                    
+                </div><!--col-md-6 Ends-->
+                
+                
+            </div><!--Container Closed-->
+            
+        </div><!--top ends-->
+        
+        <div class="navbar navbar-default" id="navbar"> <!--Navbar navbar-default Starts-->
+            <div class="container"> <!--Container starts-->
+                
+                <div class="navbar-header"> <!--navbar-header starts-->
+                    
+                    <a class="navbar-brand home" href="index.html"> <!--navbar navbar-brand home starts-->
+                       <!--2 types of logo, big for use on desktop computer, small for small screens. hidden-xs class = logo invisible when we use a small screen (Lecture 5)
+                       In our case, it is only one image-->
+                       <img src="images/logo.png" width="100px" alt="kidoo logo" class="hidden-xs">
+                       <img src="images/logo-small.png" width="100px" alt="kidoo logo" class="visible-xs">
+                        
+                    </a> <!--navbar navbar-brand home ends-->
+                    
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle Navigation </span> 
+                        <!--font awesome class -->                         
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                    <!--id used for small devices-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle Search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                    
+                </div> <!--navbar-header ends-->
+                
+                <!--id navigation is the data-target of button above-->
+                <div class="navbar-collapse collapse" id="navigation"> <!--navbar-collapse collapse starts-->
+                    <div class="padding-nav"> <!--padding-nav starts-->
+                        <ul class="nav navbar-nav navbar-left"> <!--nav navbar-nav navbar-left starts-->
+                            <li class="active">
+                                <a href="index.html"> Home </a>
+                            </li>
+                            
+                            <li>
+                                <a href="shop.html"> Shop </a>
+                            </li>
+                            
+                            <li>
+                                <a href="customer/my_account.html"> My Account </a>
+                            </li>
+                            
+                            <li>
+                                <a href="cart.html"> Shopping Cart </a>
+                            </li>
+                            
+                            <li>
+                                <a href="contact.html"> Contact Us </a>
+                            </li>
+                        </ul> <!--nav navbar-nav navbar-left ends-->
+                    </div> <!--padding-nav ends-->
+                    
+                    <a class="btn btn-primary navbar-btn right" href="cart.html"> <!--btn btn-primary navbar-btn right starts-->
+                        <i class="fa fa-shopping-cart"></i>
+                        <span> 4 items in cart </span>
+                    </a> <!--btn btn-primary navbar-btn right ends-->
+                     
+                    <div class="navbar-collapse collapse right"> <!--navbar-collapse collapse right starts-->
+                       <!--id used for full screen-->
+                        <button class="btn navbar-btn btn-primary" type="button" data-toggle="collapse" data-target="#search">
+                            <span class="sr-only"> Toggle Search</span>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div> <!--navbar-collapse collapse right ends-->
+                    
+                    <div class="collapse clearfix" id="search"> <!--collapse clearfix starts - used for hiding the search text input before pressing the search button-->
+                        
+                        <form class="navbar-form" method="get" action="results.html"> <!--navbar-form starts-->
+                            <div class="input-group"> <!--input-group starts-->
+                                <input class="form-control" type="text" placeholder="Search" name="user_query" required>
+                                <span class="input-group-btn"> <!--input-group-btn starts-->
+                                <button type="submit" value="Search" name="search" class="btn btn-primary">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                </span> <!--input-group-btn ends-->
+                            </div> <!--input-group ends-->
+                        </form> <!--navbar-form ends-->
+                        
+                    </div> <!--collapse clearfix ends-->
+                    
+                </div> <!--navbar-collapse collapse ends-->
+                
+            </div> <!--Container ends-->
+            
+        </div> <!--Navbar navbar-default Ends -->
+        
+        <div id="content"> <!--content div starts-->
+            <div class="container"> <!--container starts-->
+                
+                <div class="col-md-12">  <!--col-md-12 starts-->
+                    <ul class="breadcrumb"> <!--breadcrumb starts-->
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Register</li>
+                    </ul> <!--breadcrumb ends-->
+                </div><!--col-md-12 ends-->
+                
+                <div class="col-md-3"> 
+                        <div class="panel panel-default sidebar-menu"> 
+    
+                        <div class="panel-heading"> 
+                                <h3 class="panel-title">Products Categories</h3>
+                        </div> 
+                            <div class="panel-body"> 
+                                <ul class="nav nav-pills nav-stacked category-menu"> 
+                                    <li><a href="shop.html">Subcat1</a></li>
+                                    <li><a href="shop.html">Subcat2</a></li>
+                                    <li><a href="shop.html">Subcat3</a></li>
+                                    <li><a href="shop.html">Subcat4</a></li>
+                                    <li><a href="shop.html">Subcat5</a></li>
+                                    <li><a href="shop.html">Subcat6</a></li>
+                                </ul> 
+                            </div> 
+
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu"> 
+
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">Categories</h3>
+                            </div> 
+
+                            <div class="panel-body"> 
+                                <ul class="nav nav-pills nav-stacked category-menu"> 
+                                    <li><a href="shop.html">Cat1</a></li>
+                                    <li><a href="shop.html">Cat2</a></li>
+                                    <li><a href="shop.html">Cat3</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+                </div> 
+                
+                             
+             <!--Creating the contact.html starts here (the rest was copied from shop.html)-->
+                 <div class="col-md-9"> <!--col-md-9-->
+                     
+                        <div class="box"> <!--box - first block inside contact page (contains title and a summary)-->
+                         <div class="box-header"> <!--box-header-->
+                             <center>
+                                 <h2>Create new account</h2>
+                             </center>
+                         </div>  <!--box-header-->
+                         
+                         <form action="customer_register.html" method="post" enctype="multipart/form-data"> <!--contact form-->
+                            
+                             <div class="form-group">
+                                 <label for="">Name</label>
+                                 <input class="form-control" type="text" name="c_name" required>
+                             </div>
+                             
+                             <div class="form-group">
+                                 <label for="">Email</label>
+                                 <input class="form-control" type="text" name="c_email" required>
+                             </div>
+                             
+                             <div class="form-group">
+                                 <label for="">Password</label>
+                                 <input class="form-control" type="password" name="c_pass" required>
+                             </div>
+                             
+                             <div class="form-group">
+                                 <label for="">Country</label>
+                                 <input class="form-control" type="text" name="c_country" required>
+                             </div>
+                             
+                             <div class="form-group">
+                                 <label for="">City</label>
+                                 <input class="form-control" type="text" name="c_city" required>
+                             </div>  
+                             
+                             <div class="form-group">
+                                 <label for="">Contact</label>
+                                 <input class="form-control" type="text" name="c_contact" required>
+                             </div> 
+                             
+                             <div class="form-group">
+                                 <label for="">Address</label>
+                                 <input class="form-control" type="text" name="c_address" required>
+                             </div>       
+                             
+                             <div class="form-group">
+                                 <label for="">Picture</label>
+                                 <input class="form-control" type="file" name="c_image" required>
+                             </div>                                                                                                                                           
+                             
+                             <div class="text-center">
+                                 <button class="btn btn-primary" type="submit" name="register">
+                                     <i class="fa fa-user-md"></i> Register
+                                 </button>
+                             </div>
+                             
+                         </form> <!--contact form-->
+                         
+                     </div> <!--end of box - first block inside contact page (contains title and a summary)-->
+                 </div> <!--end of col-md-9-->
+            
+           
+           
+         
+     <!--footer copied from shop.html-->
+                </div> <!--container ends-->
+        </div><!--content div ends-->
+
+<div id="footer"> <!--footer starts-->
+   <div class="container"> <!--container starts-->
+       <div id="row"> <!--row starts-->
+           <div class="col-md-3 col-sm-6"> <!--col-md-3 col-sm-6 starts-->
+               <h4>Pages</h4>
+               <ul> <!--ul starts-->
+                   <li><a href="cart.html">Cart</a></li>                    
+                   <li><a href="contact.html">Contact</a></li>                      
+                   <li><a href="shop.html">Shop</a></li>
+                   <li><a href="../customer/my_account.html">Account</a></li>
+               </ul> <!--ul ends-->
+               
+               <hr>
+               
+               <h4>User Section</h4>
+               
+               <ul> <!--user ul starts-->
+                   <li><a href="customer/my_account.html">Login</a></li>
+                   <li><a href="customer_register.html">Register</a></li>
+               </ul> <!--user ul ends-->
+               
+               <hr class="hidden-md hidden-lg hidden-sm">
+               
+           </div> <!--col-md-3 col-sm-6 ends-->
+           
+           <div class="col-md-3 col-sm-6"> <!--col-md-3 col-sm-6 starts-->
+               <h4>Top Products Categories</h4>
+               <ul>
+                   <li><a href="#">Pants</a></li>
+                   <li><a href="#">Skirts</a></li>
+                   <li><a href="#">Shirts</a></li>
+                   <li><a href="#">Body's</a></li>
+                   <li><a href="#">Accessories</a></li>                   
+               </ul>
+               
+               <hr class="hidden-md hidden-lg">
+               
+           </div> <!--col-md-3 col-sm-6 ends-->
+           
+           <div class="col-md-3 col-sm-6"> <!--col-md-3 col-sm-6 starts-->
+              <h4>Where to find us</h4> 
+              <p>
+                  <strong>Lorem Ipsum</strong>
+                  <br>Vivamus laoreet
+                  <br>Quisque
+                  <br>0712345678
+                  <br>consectetur@email.com
+                  <br>
+                  <strong>Quisque Nec</strong>
+              </p>
+              
+              <a href="contact.html">Go to Contact Page</a>
+              
+              <hr class="hidden-md hidden-lg">
+              
+           </div> <!--col-md-3 col-sm-6 ends-->
+           
+           <div class="col-md-3 col-sm-6"> <!--col-md-3 col-sm-6 starts-->
+               <h4>Sign Up for the newsletter</h4>
+               <p class="text-muted">
+                   Sign up for the newsletter and discover the latest arrivals and promotions.
+               </p>
+               
+               <form action="" method="post"> <!--form starts-->
+                   <div class="input-group">
+                      <input type="text" class="form-control" name="email">
+                      <span class="input-group-btn">
+                          <input class="btn btn-default" type="submit" value="Abonare">
+                      </span>
+                       
+                   </div>
+                   
+               </form> <!--form ends-->
+               
+               <hr>
+               
+               <h4>Stay in touch</h4>
+               
+               <p class="social">
+                   <a href="#"><i class="fa fa-facebook"></i></a>
+                   <a href="#"><i class="fa fa-twitter"></i></a>
+                   <a href="#"><i class="fa fa-instagram"></i></a>
+                   <a href="#"><i class="fa fa-google-plus"></i></a>
+                   <a href="#"><i class="fa fa-envelope"></i></a>
+               </p>
+               
+           </div> <!--col-md-3 col-sm-6 ends-->
+           
+           
+       </div><!--row ends-->
+   </div> <!--container ends -->
+    
+    
+</div> <!--footer ends-->
+
+<!--Bar below the footer links-->
+<div id="copyright">
+    <div class="container">
+       <div class="col-md-6">
+           <p class="pull-left">&copy; 2021 </p>
+       </div>
+
+    </div>
+    
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+    
+</html> 
+
+    
